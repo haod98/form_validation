@@ -18,6 +18,7 @@ label {
 
 .error-msg {
     color: red;
+    margin: 0;
 }
 
 .error {

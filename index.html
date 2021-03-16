@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create an account</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
     <h1>Create an account</h1>
-    <form action="action.php" method="POST">
+    <form action="action.php" class="j-form" method="POST">
         <div class="container_form mandatory">
             <label for="prename" class="">First name:</label>
             <input type="text" id="prename">
@@ -78,7 +79,7 @@
             <label for="agb" class="mandatory">I agree to the Terms and Conditions</label>
         </div>
         <br>
-        <button>Register</button>
+        <button class="j-submit">Register</button>
     </form>
 </body>
 </html>
