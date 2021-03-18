@@ -4,6 +4,8 @@ const mail_input = document.querySelector('.mandatory > input[name="email"]');
 const password = document.querySelector('.mandatory > input[name="password"]');
 const confirm_password = document.querySelector('.mandatory > input[name="confirm-password"]');
 const form = document.querySelector('.j-form');
+const radio_all = document.querySelectorAll('.mandatory [name="pref"]');
+console.log(radio_all);
 
 let input = null;
 let error_msg = null;
@@ -50,5 +52,19 @@ form.addEventListener('submit', e => {
         add_error(error_msg, "Password don't match", confirm_password);
     };
 
+    let is_checked = false;
+
+    for (const pref of radio_all) {
+        if (pref.checked) {
+            is_checked = true;
+            console.log('yes its checked')
+        };
+    }
+    if (is_checked === false) {
+        add_error(error_msg, "Please check one of the following options", radio_all[radio_all.length - 1])
+
+    } else {
+
+    }
 
 });
