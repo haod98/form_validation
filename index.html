@@ -25,17 +25,18 @@
 
         <div class="container_form mandatory">
             <label for="email">E-Mail adress:</label>
-            <input type="text" id="email"> <!--Changed it to type text so I can practice E-Mail validations-->
+            <input type="text" name="email" id="email">
+            <!--Changed it to type text so I can practice E-Mail validations-->
         </div>
 
         <div class="container_form mandatory">
             <label for="password">Password:</label>
-            <input type="password" id="password">
+            <input type="password" name="password" id="password">
         </div>
 
         <div class="container_form mandatory">
-            <label for="password_again">Password again:</label>
-            <input type="password" id="password_again">
+            <label for="password_again">Confirm password:</label>
+            <input type="password" name="confirm-password" id="confirm-password">
         </div>
 
         <h2>Your interest:</h2>
@@ -56,7 +57,7 @@
                 <label for="n_fashion">No preference</label>
             </div>
         </div>
-
+        <br>
         <div class="mandatory">
             <label for="size">Your Size</label>
             <select name="cloth" id="size">
@@ -82,4 +83,5 @@
         <button class="j-submit">Register</button>
     </form>
 </body>
+
 </html>
