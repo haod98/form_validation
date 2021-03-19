@@ -24,3 +24,8 @@ label {
 .error {
     border: red solid 2px;
 }
+
+.success {
+    color: green;
+    display: none;
+}

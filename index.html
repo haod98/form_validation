@@ -39,47 +39,43 @@
             <input type="password" name="confirm-password" id="confirm-password">
         </div>
 
-        <h2>Your interest:</h2>
+
         <div class="mandatory">
+            <h2>Your interest:</h2>
             <div>
                 <input type="radio" id="w_fashion" name="pref" value="1">
                 <label for="w_fashion">Women's fashion</label>
-            </div>
-
-            <div>
                 <input type="radio" id="m_fashion" name="pref" value="2">
                 <label for="m_fashion">Men's fashion</label>
-            </div>
-
-            <div>
                 <input type="radio" id="n_fashion" name="pref" value="3">
                 <label for="n_fashion">No preference</label>
             </div>
-        </div>
-        <br>
-        <div class="mandatory">
-            <label for="size">Your Size</label>
-            <select name="cloth" id="size">
-                <option value="0" selected>None</option>
-                <option value="1">S</option>
-                <option value="2">M</option>
-                <option value="3">L</option>
-                <option value="4">XL</option>
-            </select>
-        </div>
+            <br>
+            <div class="mandatory">
+                <label for="size">Your Size</label>
+                <select name="cloth" id="size">
+                    <option value="0" selected>--</option>
+                    <option value="1">None</option>
+                    <option value="2">S</option>
+                    <option value="3">M</option>
+                    <option value="4">L</option>
+                    <option value="5">XL</option>
+                </select>
+            </div>
 
-        <br>
-        <div>
-            <input type="checkbox" id="news" checked>
-            <label for="news">Yes, I want newsletters.</label>
-        </div>
+            <br>
+            <div>
+                <input type="checkbox" id="news" checked>
+                <label for="news">Yes, I want newsletters.</label>
+            </div>
 
-        <div class="mandatory">
-            <input type="checkbox" id="agb">
-            <label for="agb" class="mandatory">I agree to the Terms and Conditions</label>
-        </div>
-        <br>
-        <button class="j-submit">Register</button>
+            <div class="mandatory">
+                <input type="checkbox" id="agb" name="agb">
+                <label for="agb" class="mandatory" >I agree to the Terms and Conditions</label>
+            </div>
+            <br>
+            <button class="j-submit">Register</button>
+            <p class="success">Success</p>
     </form>
 </body>
 
